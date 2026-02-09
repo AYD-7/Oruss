@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and DOM Manipulation</title>
+    <script defer src="dom.js"></script>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <h1 id="heading" >Hello World</h1>
+
+    <img src="./assets/image-grass.jpg" width="200px" alt="grass">
+
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit saepe ipsa sequi hic quibusdam, eligendi esse totam quia sunt modi exercitationem quod. Illum, reprehenderit facere iusto excepturi tenetur a. Cumque.</p>
+
+    <p class="para">This is another practice test</p>
+
+    <button type="button" class="btn">Click</button>
+    <button type="button" class="btn">Press</button>
+
+    <button id="modified" disabled></button>
+
+    <!-- List of items -->
+    <ul id="fruits">
+        <!-- To populate dynamically with JS -->
+        
+    </ul>
+
+    <!-- Dropdown -->
+    <div class="dropdown-container">
+        <!-- Trigger Element -->
+        <button type="button" id="menu-btn">Click me</button>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu" id="menu">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <!-- Form -->
+        <form action="" method="post" id="myForm">
+            <!-- First Name -->
+            <fieldset>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+            </fieldset>
+            <!-- Last Name -->
+            <fieldset>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+            </fieldset>
+            <!-- Email -->
+            <fieldset>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </fieldset>
+            <!-- Tel -->
+            <fieldset>
+                <label for="tel">Tel:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Enter your telephone no.">
+            </fieldset>
+            <!-- Password -->
+            <fieldset>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+            </fieldset>
+            <!-- Confirm Password -->
+            <fieldset>
+                <label for="c-password">Confirm Password:</label>
+                <input type="password" name="c-password" id="cPassword" placeholder="Re-enter your password">
+            </fieldset>
+            <!-- Buttons -->
+            <fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+        <div class="modal-wrapper" id="modal-wrapper">
+            <div class="modal" id="modal">
+                <h2 id="title"></h2>
+                <p id="desc"></p>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

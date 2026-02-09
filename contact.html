@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        div.group {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Page</h1>
+
+    <br><br>
+
+    <div class="group">
+        <!-- Inline Scripting -->
+        <button onclick="window.alert('Welcome, Ayomiposi & Faithfulness')">Click me</button>
+
+        <!-- Internal Scripting -->
+        <button id="nau">Check question</button>
+        <script>
+            document.getElementById("nau").addEventListener("click", function() {
+                window.prompt("How are you finding today's class?");
+            });
+        </script>
+    </div>
+
+    <div>
+        <h3>Count is at <span id="count"></span></h3>
+        <div class="group">
+            <button id="increase">Increase</button>
+            <button id="decrease">Decrease</button>
+        </div>
+    </div>
+
+    <script src="./contact.js"></script>
+</body>
+</html>

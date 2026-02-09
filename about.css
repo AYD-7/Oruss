@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+div.container {
+    border: 2px solid black;
+    margin-block: 40px;
+    position: relative;
+}
+
+.red, .green, .blue {
+   width: 150px;
+   height: 150px;
+}
+
+.red {
+    background-color: red;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blue {
+    background-color: blue;
+    position: sticky;
+    top: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    font-size: 24px;
+}
+
+div.overflow {
+    border: 4px solid red;
+    width: 300px;
+    height: 100px;
+    font-size: 26px;
+    overflow: auto;
+}
+
+section.display-section {
+    /* display: block; */
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 20px;
+}
+
+section.display-section p {
+    background-color: yellow;
+    width: 500px;
+    color: black;
+    display: inline-block;
+    width: 500px;
+    visibility: hidden;
+}
+
+
+section.display-section a {
+    background-color: green;
+    width: 500px;
+    color: white;
+    /* display: block; */
+}
+
+/* CSS Flexbox */
+div.flex-container {
+    border: 4px solid #000000;
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+div.flex-container .flex-item {
+    background-color: grey;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    /* height: 100px; */
+}
+div.flex-container .flex-item:nth-child(4), div.flex-container .flex-item:nth-child(5) {
+    background-color: lightcoral;
+    /* height: 200px; */
+}
+
+/* CSS Grid */
+div.grid-container {
+    border: 4px solid green;
+    margin-block: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    column-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+
+div.grid-container .grid-item {
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    /* height: 100px; */
+}
+
+/* div.grid-container .grid-item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+} */
+
+/* CSS Animation */
+.animation-container {
+    margin-block: 100px;
+    
+}
+
+.animation-container .box {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.animation-container .bounce {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    from {
+        position: relative; left: 0;
+    }
+    to {
+        position: relative; left: 90vw;
+    }
+}
+.animation-container .fade-in {
+    animation-name: fade-in;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.50;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+.animation-container .scale-up {
+    animation-name: scale-up;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}   
+
+@keyframes scale-up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}

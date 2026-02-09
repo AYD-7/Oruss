@@ -1,0 +1,169 @@
+/* Mobile Screens */
+@media only screen and (max-width: 640px) {
+    header {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        min-height: 85vh;
+    }
+
+    nav {
+        top: 5%;
+        padding: 8px 25px;
+    }
+
+    nav .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    div.hamburger-container {
+        display: block;        
+    }
+
+    button.hamburger-button {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        
+
+    }
+
+    button.hamburger-button span {
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    div.hero-section {
+        margin-top: 6rem;
+        gap: 35px;
+    }
+
+    div.hero-text-wrapper {
+        gap: 20px;
+    }
+
+    div.hero-text-wrapper h1 {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    div.hero-text-wrapper p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    div.hero-button-wrapper button {
+        width: 100px;
+    }
+
+    section.ads-section {
+        padding: 50px 12.5px;
+    }
+
+    div.ads-wrapper {
+        gap: 15px;
+        flex-wrap: wrap;
+
+    }
+
+    div.ads-text-wrapper {
+        opacity: 1;
+    }
+
+    section.team-section {
+        padding: 50px 12.5px;
+    }
+}
+
+/* Tablet Screens */
+@media only screen and (max-width: 1023px) {
+    header {
+        padding-top: 80px;
+        padding-bottom: 30px;
+        min-height: 75vh;
+    }
+
+    nav {
+        top: 8%;
+        padding: 10px 35px;
+    }
+
+    nav .logo {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    div.hamburger-container {
+        display: block;        
+    }
+
+    button.hamburger-button {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: none;       
+    }
+
+    button.hamburger-button span {
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    div.hero-section {
+        margin-top: 8rem;
+        gap: 35px;
+    }
+
+    div.hero-text-wrapper {
+        gap: 25px;
+    }
+
+    div.hero-text-wrapper h1 {
+        font-size: 3.5rem;
+        width: 80%;
+    }
+
+    div.hero-text-wrapper p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    div.hero-button-wrapper button {
+        width: 120px;      
+    }
+
+    section.ads-section {
+        padding: 75px 20px;
+    }
+
+    div.ads-wrapper {
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    div.ad {
+        width: 90%;
+        height: 20rem;
+    }
+
+    div.ads-text-wrapper {
+        opacity: 1;
+    }
+
+}
